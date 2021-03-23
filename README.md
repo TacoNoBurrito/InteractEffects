@@ -16,4 +16,4 @@ cooldown-message: You are still on cooldown for {cooldown} seconds!
   amplifier: 3 #amplifier of effect
   ```
   
-   - Enjoy
+   - Enjoy, Made By Taco!
