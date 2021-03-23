@@ -1,6 +1,6 @@
 # InteractEffects
 
- - Config Explains Itself Basically
+Get Effects From Interacting With Items With A Easy-To-Use Configuration File!
 
 ```
 #Interact Effects Configuration File
