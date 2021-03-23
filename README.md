@@ -13,6 +13,7 @@ cooldown-message: You are still on cooldown for {cooldown} seconds!
   cooldown: 5 #cooldown in seconds
   effectid: 2 #effect id
   length: 2 #length of effect in seconds
-  amplifier: 3 #amplifier of effect```
+  amplifier: 3 #amplifier of effect
+  ```
   
    - Enjoy
