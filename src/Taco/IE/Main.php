@@ -12,23 +12,22 @@ class Main extends PluginBase implements Listener {
 	/**
 	 * @var array
 	 */
-	private array $config = [];
+	private $config = [];
 
 	/**
 	 * @var array
 	 */
-	private array $cooldown = [];
+	private $cooldown = [];
 
 	/**
 	 * @var string
 	 */
-	private string $cdMessage;
+	private $cdMessage;
 
 	public function onEnable() : void {
 		@mkdir($this->getDataFolder());
 		$this->saveResource("config.yml");
 		$this->config = $this->getConfig()->getAll();
-		var_dump($this->config);
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->cdMessage = $this->config["cooldown-message"];
 	}
