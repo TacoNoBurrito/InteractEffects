@@ -25,7 +25,6 @@ class Main extends PluginBase implements Listener {
 	private $cdMessage;
 
 	public function onEnable() : void {
-		@mkdir($this->getDataFolder());
 		$this->saveResource("config.yml");
 		$this->config = $this->getConfig()->getAll();
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
