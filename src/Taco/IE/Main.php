@@ -25,8 +25,8 @@ class Main extends PluginBase implements Listener {
 	private $cdMessage;
 
 	public function onEnable() : void {
-		$this->saveResource("config.yml");
-		$this->config = $this->getConfig()->getAll();
+		$this->saveConfig();
+		$this->config = (array)$this->getConfig()->getAll();
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->cdMessage = $this->config["cooldown-message"];
 	}
